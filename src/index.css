@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply text-white;
+    background: linear-gradient(
+            to right,
+            #0a0a0a 0%,
+            #111827 33%,
+            #1e293b 66%,
+            #0a0a0a 100%
+    );
+}
