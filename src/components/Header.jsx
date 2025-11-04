@@ -1,8 +1,22 @@
 import NavLink from "./NavLink";
+import { useEffect, useState} from "react";
 
 function Header() {
+
+    // Change nav color when scrolling
+    const [color, setColor] = useState(false);
+    const changeColor = () => {
+        if (window.scrollY >= 10) {
+            setColor(true);
+        } else {
+            setColor(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeColor);
+
     return (
-        <header className={"bg-black text-white p-6"}>
+        <header className={`text-white p-6 w-full fixed left-0 top-0 z-50 ${color ? "bg-black shadow-md border-b border-white opacity-75" : "bg-[linear-gradient(to_right,#0a0a0a_0%,#111827_33%,#1e293b_66%,#0a0a0a_100%)]"}`}>
             <div className="max-w-screen-xl mx-auto flex justify-between items-center">
                 <div className="left">
                     <nav>
