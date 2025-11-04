@@ -6,7 +6,7 @@ function Header() {
     // Change nav color when scrolling
     const [color, setColor] = useState(false);
     const changeColor = () => {
-        if (window.scrollY >= 10) {
+        if (window.scrollY >= 20) {
             setColor(true);
         } else {
             setColor(false);

@@ -4,10 +4,16 @@ import Arrow from "../components/Arrow";
 
 function Hero() {
     return (
-        <section>
+        <section className={"relative h-screen flex flex-col justify-center"}>
             <Header />
-            <Headline />
-            <Arrow />
+
+            <div className={"flex flex-1 items-center justify-center"}>
+                <Headline />
+            </div>
+
+            <div>
+                <Arrow />
+            </div>
         </section>
     )
 }

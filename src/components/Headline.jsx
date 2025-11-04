@@ -1,7 +1,7 @@
 function Headline() {
     return (
-        <div className={"flex items-center justify-between min-h-screen px-[10%]"}>
-            <div className={"max-w-xl"}>
+        <div className={"flex items-center justify-between min-h-screen px-[10%] pt-10"}>
+            <div className={"w-1/2"}>
                 <div>
                     <h2 className={"text-6xl font-light uppercase"}>Mikhail</h2>
                     <h1 className={"text-8xl font-bold uppercase"}>Stukalov</h1>
@@ -23,7 +23,7 @@ function Headline() {
             </div>
 
             <div className={"w-1/2 flex justify-center"}>
-                <img src="/images/me_headline.JPG" alt="My Image" className={"rounded-full w-128 h-128 object-cover"} />
+                <img src="/images/me_headline.JPG" alt="My Image" className={"rounded-full w-128 h-128 object-cover z-[60]"} />
             </div>
         </div>
     )
