@@ -4,3 +4,14 @@ module.exports = {
   theme: { extend: {} },
   plugins: [],
 };
+
+export default {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}

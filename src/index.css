@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 body {
-    @apply text-white;
-    background: linear-gradient(
-            to right,
-            #0a0a0a 0%,
-            #111827 33%,
-            #1e293b 66%,
-            #0a0a0a 100%
-    );
+    background: radial-gradient(circle at 25% 25%, #1e293b, #0a0a0a 70%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    @apply font-sans text-white antialiased;
 }
+
+section {
+    background: transparent;
+}
+
